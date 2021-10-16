@@ -31,3 +31,22 @@ cout<<"\n hi this is shivam rai";
 //in tools option
 
 }
+
+
+/* METHOD 2 : EASY
+simple trick from luv
+1.go to tool ->create new build system copy paste given below code . And save the file with  " c++14.sublime-build "
+  code :
+  
+  {
+"cmd": ["g++.exe","-std=c++14", "${file}", "-o", "${file_base_name}.exe", "&&" , "${file_base_name}.exe<inputf.in>outputf.in"],
+"selector":"source.cpp",
+"shell":true,
+"working_dir":"$file_path"
+ }
+
+2.open 3 tabs in sublime , write c++ code in 1 tab save as .cpp  , in 2 tab create inputf.in as new file , in 3 tab create outputf.in as new file.
+3.now in 1 tab  , select the build system as c++14 , then build the code :  ctrl+B 
+4.done u can see the output in the 3 tab.
+
+*/
